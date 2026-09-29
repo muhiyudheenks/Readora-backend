@@ -21,6 +21,7 @@ app.get('/', (req, res) => {
 
 app.use(cors({
     origin: ["http://localhost:5173",
+        "http://localhost:4173",
         'https://readora-chi.vercel.app',
         "https://readora-app.netlify.app"],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
